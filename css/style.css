@@ -196,6 +196,11 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   width:100px;
 }
 
+#boxes a:hover{
+  position:relative;
+  top: 10px;
+}
+
 footer{
   padding:20px;
   color:#ffffff;
