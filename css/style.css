@@ -1,8 +1,13 @@
 body{
-  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  font-family: 'Lato', sans-serif;
   padding:0;
   margin:0;
-  background:#cccccc;
+  background:#F5F5F5;
+  align-items: center;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 /* Global */
@@ -81,12 +86,9 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-  background:#000000;
   color:#000000;
   padding-top: 30px;
-  min-height:600px;
-  background:url('../img/showcase.png') no-repeat 0 -350px;
-  background-size: cover;
+  min-height:300px;
   text-align:center;
 }
 
@@ -135,48 +137,81 @@ header a:hover{
   font-size:25px;
 }
 
-/* Info */
-#info{
-  margin-top:60px;
-  margin-bottom:80px;
+/* About and Contacts */
+
+#about{
+
 }
 
-#info p{
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
-}
-
-/* Main */
-#main{
-  background:url('../img/about.jpg') no-repeat;
+#about,
+#contacts{
   background-size: cover;
-  min-height:600px;
   position: relative;
+  margin-bottom: 100px;
 }
 
-#main h1{
+#about h1,
+#contacts h1{
   color:#000000;
   font-size:30px;
   text-align: center;
 }
 
-#main p{
+#about p,
+#contacts p{
   color: #000000;
   font-size:18px;
   font: serif;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Projects */
+
+#projects{
+  margin-bottom: 100px;
+}
+
+#projects h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.container1{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+#projects .project{
+  position: relative;
+  flex-basis: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#projects .project img{
+  min-height: 300px;
+  min-width: 300px;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 /* Boxes */
@@ -190,15 +225,27 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   width: 20%;
   text-align: center;
   padding: 30px;
+  font-size: 700%;
 }
 
-#boxes .box img{
-  width:100px;
+#boxes a{
+  color: #888888;
 }
 
-#boxes a:hover{
-  position:relative;
-  top: 10px;
+#mail a:hover{
+  color: #06a9ff;
+}
+
+#linkedin a:hover{
+  color: #0077B5;
+}
+
+#github a:hover{
+  color: #000000;
+}
+
+#facebook a:hover{
+  color: #3b5998;
 }
 
 footer{

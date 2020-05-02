@@ -6,18 +6,20 @@
     <meta name="description" content="Affordable and professional web design">
     <meta name="keywords" content="web design, affordable web design, professional">
     <meta name="author" content="Brad Traversy">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>Thomas Liu | Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
 
+  <body>
     <section id="showcase">
       <div class="container">
         <nav>
           <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1QJR04JgzT-SyDzLQMY0mC2j7mZItONon/view?usp=sharing">Resume</a></li>
           </ul>
         </nav>
         <h1>Hello, I'm Thomas</h1>
@@ -25,10 +27,63 @@
       </div>
     </section>
 
-    <section id="info">
+    <section id="about">
       <div class="container">
-        <p>This website is created as a side project using HTML5 and CSS3!</p>
-        <p>More updates coming soon...</p>
+        <article id="main-col">
+          <h1 class = "page-title">About Me</h1>
+          <p>
+I'm a second-year undergraduate student at the University of Waterloo. I am enrolled in the Mathematics/Financial Analysis and Risk Management co-op program and am currently seeking Fall 2020 internships!
+I am a passionate individual and quick learner who demonstrates great collaboration and communication skills through learning. My current interests are Data Analysis and Investment Management, as well
+as Venture Capital and Private Equity. Outside of academics, my favourite pastimes are basketball and piano. I also love to get involved in extracurricular activites at school! I am currently a member of
+the Financial Analysis and Risk Manangement Student Association (FARMSA), Univesity of Waterloo Finance Association (UWFA), and Data Science Club.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h1 class="page-title">Projects</h1>
+      </div>
+      <div class="container1">
+        <div class="project">
+          <img src="./img/Budget.png" class="responsive">
+          <h3>Household Budget</h3>
+          <p>Budget for 2019 created using Excel spreadsheet and VBA.</p>
+        </div>
+        <div class="project">
+          <img src="./img/Weather.png" class="responsive">
+          <h3>MyWeather</h3>
+          <p>This is a simple weather app created in order to practice using Javascript and getting to familiarize with the programming language.</p>
+        </div>
+        <div class="project">
+          <img src="./img/Stock.png" class="responsive">
+          <h3>StockTrak Equity Portfolio</h3>
+          <p>Investments that include stocks, bonds, options, and ETFs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container">
+        <h1 class = "page-title">Contact</h1>
+        <section id="boxes">
+          <div class="container">
+            <div class="box" id="mail">
+              <a href="mailto:t355liu@uwaterloo.ca"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+            <div class="box" id="linkedin">
+              <a href="https://www.linkedin.com/in/thomasliu01"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="box" id="github">
+              <a href="https://github.com/thomasliu0630"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="box" id="facebook">
+              <a href="https://www.facebook.com/liu.thomas.188"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+          </div>
+          <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        </section>
       </div>
     </section>
 
