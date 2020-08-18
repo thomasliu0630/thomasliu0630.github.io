@@ -12,7 +12,7 @@ html{
 
 /* Global */
 .container{
-  width:80%;
+  width: 80%;
   margin:auto;
   overflow:hidden;
 
@@ -156,23 +156,33 @@ header a:hover{
 #about p,
 #contacts p{
   color: #000000;
-  font-size:18px;
+  font-size:20px;
+  line-height: 2;
   font: serif;
-  width: 75%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-/* Projects */
-
-#projects{
-  margin-bottom: 100px;
+.picture{
+  width: 200px;
+  float:left;
+  position: relative;left:80px;
 }
 
-#projects h1{
-  text-align: center;
-  font-size: 30px;
+.info{
+  width: 80%;
+  float: left;
+}
+
+.info a{
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.info a:hover{
+  color: #0047b3;
+  text-decoration: underline;
 }
 
 .container1{
@@ -187,6 +197,17 @@ header a:hover{
 .responsive{
   width: 100%;
   height: auto;
+}
+
+/* Projects */
+
+#projects{
+  margin-bottom: 100px;
+}
+
+#projects h1{
+  text-align: center;
+  font-size: 30px;
 }
 
 #projects .project{
@@ -232,6 +253,25 @@ header a:hover{
 
 #projects .project:hover::after {
     opacity: 1;
+}
+
+#projects .project button{
+  margin: auto;
+  display:block;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project a{
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.project a:hover{
+  color: #0047b3;
+  text-decoration: underline;
 }
 
 /* Boxes */
